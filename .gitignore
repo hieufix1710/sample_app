@@ -6,6 +6,7 @@
 
 # Ignore bundler config.
 /.bundle
+/.framgia-ci-reports
 
 # Ignore all logfiles and tempfiles.
 /log/*
