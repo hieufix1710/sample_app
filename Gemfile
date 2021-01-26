@@ -2,12 +2,13 @@ source "https://rubygems.org"
 git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.7.0"
-gem "bootstrap-sass", "~>3.4.1"
-
 gem "bcrypt", "3.1.11"
+gem "bootstrap-sass", "~>3.4.1"
+gem "jquery-rails", "4.3.1"
 gem "mysql2", "~> 0.5"
 gem "puma", "~> 5.0"
 gem "rails", "~> 6.1.1"
+gem "rails-i18n"
 gem "sass-rails", ">= 6"
 gem "webpacker", "~> 5.0"
 

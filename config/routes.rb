@@ -1,5 +1,22 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  get 'sessions/new'
+  post 'sessions/new', to: "sessions#create"
+  get 'sessions/create'
+  get 'sessions/destroy'
+  root 'static_pages#home'
   get 'static_pages/help'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'static_pages/login'
+  scope "(:locale)", locale: /en|vi/ do
+    resources :microposts
+  end
+  get "/signup", to: "users#new"
+  post "/signup", to: "users#create"
+  resources :users, only: %i(new create)
+
+
+
+  get "/login", to: "sessions#new"
+  post "/login", to: "sessions#create"
+  delete "/logout", to: "sessions#destroy"
+
 end

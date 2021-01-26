@@ -1,2 +1,4 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<% provide :title, "Help" %>
+<h1><%= t("help")%></h1>
+<p><%= t("body_help", link_tutor: link_to(t("link_tutorial"), "http://www.railstutorial.com")).html_safe%>
+</p>

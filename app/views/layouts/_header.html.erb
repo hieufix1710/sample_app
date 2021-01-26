@@ -1,14 +1,23 @@
-
 <header class="navbar navbar-fixed-top
 navbar-inverse">
 <div class="container">
-<%= link_to "sample app", "#", id: "logo" %>
-<nav>
-<ul class="nav navbar-nav navbar-right">
-<li><%= link_to "Home", "/static_pages/home" %></li>
-<li><%= link_to "Help", "/static_pages/help" %></li>
-<li><%= link_to "Log in", "/static_pages/login" %></li>
-</ul>
-</nav>
+  <%= link_to t('sample_app'), root_path, id: "logo" %>
+  <nav>
+    <ul class="nav navbar-nav navbar-right">
+      <li><%= link_to t('help'), static_pages_help_path %></li>
+
+      <li><%= link_to t('english') ,locale:"en" %></li> |
+      <li><%= link_to t('vietnamese') ,locale:"vi" %></li>
+
+      <% if logged_in? %>
+      <li><%= link_to t('profile'), current_user %></li>
+      <li><%= link_to  t('settings'),'#' %></li>
+      <li> <%= link_to t('log_out'),sessions_destroy_path, method: :delete %></li>
+      <% else %>
+      <li><%= link_to t('login'), sessions_new_path %></li>
+      <% end %>
+    </ul>
+  </nav>
 </div>
 </header>
+

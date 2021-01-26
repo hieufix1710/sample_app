@@ -1,0 +1,39 @@
+vi:
+    hello: 'Xin chào'
+    home: 'Trang chủ'
+    login: 'Đăng nhập'
+    sign_up: 'Đăng kí ngay !'
+    sample_app: 'Ứng dụng mẫu'
+    help: 'Trợ giúp'
+    english: 'Tiếng Anh'
+    vietnamese: 'Tiếng Việt'
+    ruby_and_rails_tutorial: 'Hướng dẫn Ruby trên Rails'
+    welcome_title: 'Đây là ứng dụng mẫu cho %{link}'
+    link_tutorial: 'www.railstutorial.org'
+    body_help: 'Xem tài liệu và hướng dẫn tại %{link_tutor}'
+    name: 'Họ và tên'
+    email: 'Email'
+    password: 'Mật khẩu'
+    create_my_account: 'Tạo tài khoản'
+    confirm_password: 'Xác nhận mật khẩu'
+    Welcome_to_the_sample_app!: 'Chào mừng bạn đến với ứng dụng mẫu'
+    Manipulation_fail!: "Thao tác không thành công ! Hãy kiểm tra lại thông tin !"
+    invalid_email_password_combination: "Email hoặc mật khẩu chưa hợp lệ !"
+    hello_user: 'Xin chào, %{user}'
+    sign_up_now!: 'Đăng kí ngay'
+    new_user?: 'Người dùng mới?'
+    profile: 'Người dùng'
+    settings: 'Cài đặt'
+    log_out: 'Đăng xuất'
+    the_form_contains: 'Mẫu đăng kí'
+    error: 'lỗi'
+    activerecord:
+       errors:
+          models:
+            user:
+              attributes:
+                password: 'mật khẩu'
+                confirm_password: 'xác nhận mật khẩu'
+                name: 'tên'
+                email:
+                  blank: "không được để trống"
