@@ -7,7 +7,19 @@ en:
   sign_up_now!: 'Sign up now!'
   invalid_email_password_combination: 'Invalid email or password combination !'
   hello_user: "Hello , %{user}"
+  not_found: 'Not Found !'
+  update: 'Updated!'
   login: "Login"
+  remember_me: "Remember me"
+  deleted: "Delete success !"
+  edit_user: 'Edit user'
+  save_changes: 'Save changes'
+  ruby_on_rails_tutorial_app: 'Ruby on Rails tutorial'
+  please_log_in: 'Pleaese login !'
+  all_users: 'All users'
+  update_your_profile: 'Update your profile'
+  create_my_account: "Create my account"
+  ruby_on_rails_ttutorial: 'Ruby on Rails tutorial'
   activerecord:
     errors:
       models:

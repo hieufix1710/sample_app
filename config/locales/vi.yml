@@ -26,7 +26,22 @@ vi:
     settings: 'Cài đặt'
     log_out: 'Đăng xuất'
     the_form_contains: 'Mẫu đăng kí'
+    not_found: 'Không tìm thấy kết quả'
+    update: 'Đã cập nhật'
     error: 'lỗi'
+    users: 'Danh sách người dùng'
+    remember_me: 'Lưu mật khẩu'
+    create_my_account: "Tạo tài khoản"
+    deleted: "Xóa thành công"
+    all_users: 'Danh sách ngừoi dùng'
+    delete: 'Xóa'
+    edit_user: 'Chỉnh sửa thông tin'
+    save_changes: 'Lưu các thay đổi'
+    ruby_on_rails_tutorial_app: 'Hướng dẫn Ruby trên Rails'
+    please_log_in: "Yêu cầu đăng nhập"
+    ruby_and_rails_tutorial: 'Hướng dẫn Ruby trên Rails'
+    change: 'Thay đổi'
+    update_your_profile: 'Cập nhật thông tin'
     activerecord:
        errors:
           models:
