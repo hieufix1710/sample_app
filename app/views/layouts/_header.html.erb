@@ -1,5 +1,4 @@
-<header class="navbar navbar-fixed-top
-navbar-inverse">
+<header class="navbar navbar-fixed-top navbar-inverse">
 <div class="container">
   <%= link_to t('sample_app'), root_path, id: "logo" %>
   <nav>
@@ -10,8 +9,9 @@ navbar-inverse">
       <li><%= link_to t('vietnamese') ,locale:"vi" %></li>
 
       <% if logged_in? %>
-      <li><%= link_to t('profile'), current_user %></li>
-      <li><%= link_to  t('settings'),'#' %></li>
+      <li><%= link_to t("users"), users_path %></li>
+      <li><%= link_to t('profile'), current_user  %></li>
+      <li><%= link_to  t('settings'), edit_user_path(current_user) %></li>
       <li> <%= link_to t('log_out'),sessions_destroy_path, method: :delete %></li>
       <% else %>
       <li><%= link_to t('login'), sessions_new_path %></li>
