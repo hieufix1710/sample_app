@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get 'static_pages/login'
   scope "(:locale)", locale: /en|vi/ do
     resources :microposts
+    resources :users
   end
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
