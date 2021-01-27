@@ -59,4 +59,9 @@
 yarn-debug.log*
 .yarn-integrity
 /config/application.yml
-
+.framgia-ci.yml
+.framgia-ci-result.temp.yml
+.rubocop.yml
+.rubocop_disabled.yml
+.rubocop_enabled.yml
+config/database.yml

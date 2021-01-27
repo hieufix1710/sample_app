@@ -3,15 +3,15 @@
   <%= link_to t("sample_app"), root_path, id: "logo" %>
   <nav>
     <ul class="nav navbar-nav navbar-right">
-      <li><%= link_to t("help"), static_pages_help_path %></li>
-      <li><%= link_to t("english") ,locale: :en %></li> |
-      <li><%= link_to t("vietnamese") ,locale: :vi %></li>
+        <li><%= link_to t("help"), static_pages_help_path %></li>
+        <li><%= link_to t("english") ,locale: :en %></li> |
+        <li><%= link_to t("vietnamese") ,locale: :vi %>
       <% if logged_in? %>
         <li><%= link_to t("profile"), current_user %></li>
         <li><%= link_to  t("settings"),"#" %></li>
-        <li> <%= link_to t("log_out"),sessions_destroy_path, method: :delete %></li>
+        <li> <%= link_to t("log_out"), logout_path, method: "delete" %></li>
       <% else %>
-        <li><%= link_to t("login"), sessions_new_path %></li>
+        <li><%= link_to t("login"), login_path %></li>
       <% end %>
     </ul>
   </nav>
