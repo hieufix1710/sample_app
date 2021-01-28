@@ -12,7 +12,7 @@
       <li><%= link_to t("users"), users_path %></li>
       <li><%= link_to t('profile'), current_user  %></li>
       <li><%= link_to  t('settings'), edit_user_path(current_user) %></li>
-      <li> <%= link_to t('log_out'),sessions_destroy_path, method: :delete %></li>
+      <li> <%= link_to t('log_out'), sessions_destroy_path, method: :delete %></li>
       <% else %>
       <li><%= link_to t('login'), sessions_new_path %></li>
       <% end %>

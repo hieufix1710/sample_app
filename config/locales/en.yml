@@ -20,6 +20,7 @@ en:
   update_your_profile: 'Update your profile'
   create_my_account: "Create my account"
   ruby_on_rails_ttutorial: 'Ruby on Rails tutorial'
+
   activerecord:
     errors:
       models:

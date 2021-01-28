@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'sessions/new', to: "sessions#create"
   get 'sessions/create'
   get 'sessions/destroy'
+  delete 'sessions/destroy'
   root 'static_pages#home'
   get 'static_pages/help'
   get 'static_pages/login'
@@ -10,6 +11,8 @@ Rails.application.routes.draw do
     resources :microposts
     resources :users
   end
+      resources :account_activations, only: :edit
+
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
   resources :users, only: %i(new create)

@@ -1,7 +1,5 @@
 class UsersController < ApplicationController
-  # skip_before_action :verify_authenticity_token
   before_action :correct_user, only: [:edit, :update]
-
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   def current_user?(user)
     user == current_user
@@ -13,7 +11,7 @@ class UsersController < ApplicationController
     end
   end
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.paginate(page: params[:page], per_page: 2)
   end
   def new
     @user = User.new
@@ -28,9 +26,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      log_in @user
-      redirect_to @user
-      flash[:success] = t "Welcome_to_the_sample_app!"
+      @user.send_activation_email
+      flash[:info] = t"please_check_email_to_activate_your_account"
+      redirect_to root_url
     else
       render :new
     end
@@ -54,7 +52,7 @@ class UsersController < ApplicationController
  def logged_in_user
     unless logged_in?
       store_location
-      flash[:danger] = "please_log_in"
+      flash[:danger] =  t"please_log_in"
       redirect_to login_url
     end
   end
