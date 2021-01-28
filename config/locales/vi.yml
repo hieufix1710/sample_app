@@ -42,6 +42,10 @@ vi:
     ruby_and_rails_tutorial: 'Hướng dẫn Ruby trên Rails'
     change: 'Thay đổi'
     update_your_profile: 'Cập nhật thông tin'
+    update_success: "Cập nhật thành công"
+    forgot_password: "Lấy lại mật khẩu"
+    submit: "Xác nhận"
+    update_password: "Cập nhật mật khẩu"
     activerecord:
        errors:
           models:

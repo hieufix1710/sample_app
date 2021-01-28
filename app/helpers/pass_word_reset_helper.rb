@@ -1,0 +1,2 @@
+module PassWordResetHelper
+end

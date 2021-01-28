@@ -20,6 +20,11 @@ en:
   update_your_profile: 'Update your profile'
   create_my_account: "Create my account"
   ruby_on_rails_ttutorial: 'Ruby on Rails tutorial'
+  update_success: "Update success!"
+  forgot_password: "Forgot password"
+  submit: "Submit"
+  update_password: "Update password"
+
   activerecord:
     errors:
       models:
