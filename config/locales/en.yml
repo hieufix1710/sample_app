@@ -24,6 +24,7 @@ en:
   forgot_password: "Forgot password"
   submit: "Submit"
   update_password: "Update password"
+  micropost_deleted: "Micropost deleted "
 
   activerecord:
     errors:

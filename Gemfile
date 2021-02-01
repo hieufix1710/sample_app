@@ -14,6 +14,11 @@ gem "sass-rails", ">= 6"
 gem "webpacker", "~> 5.0"
 gem "jbuilder", "~> 2.7"
 gem "turbolinks", "~> 5"
+gem "config"
+
+gem "image_processing", "1.9.3"
+gem "mini_magick", "4.9.5"
+gem "active_storage_validations", "0.8.2"
 # gem "will_paginate", "3.1.7"
 gem "bootstrap-will_paginate", "1.0.0"
 

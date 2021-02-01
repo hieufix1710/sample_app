@@ -21,17 +21,16 @@ class PasswordResetsController < ApplicationController
 
   def update
     if user_params[:password].empty?
-
     elsif @user.update user_params
       redirect_to login_path
       flash[:success] = t("update_success")
-
     else
       render :edit
     end
   end
 
   private
+
   def user_params
     params.require(:user).permit :password, :password_confirmation
   end

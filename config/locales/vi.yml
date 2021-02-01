@@ -46,6 +46,7 @@ vi:
     forgot_password: "Lấy lại mật khẩu"
     submit: "Xác nhận"
     update_password: "Cập nhật mật khẩu"
+    micropost_deleted: "Xóa thành công"
     activerecord:
        errors:
           models:

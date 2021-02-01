@@ -6,9 +6,7 @@ class UsersController < ApplicationController
   end
   def show
     @user = User.find_by id: params[:id]
-    if @user.nil?
-      flash[:warning] =  t 'not_found'
-    end
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
   def index
     @users = User.paginate(page: params[:page], per_page: 2)

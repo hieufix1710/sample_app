@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   end
   resources :account_activations, only: :edit
   resources :password_resets, only: [:new, :create, :edit, :update]
+  resources :microposts, only: [:create, :destroy] or
+  resources :microposts, except: [:index, :new, :edit, :show, :update]
   get "/signup", to: "users#new"
   post "/signup", to: "users#create"
   resources :users, only: %i(new create)
