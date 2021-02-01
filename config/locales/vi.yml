@@ -1,58 +1,70 @@
 vi:
-    hello: 'Xin chào'
-    home: 'Trang chủ'
-    login: 'Đăng nhập'
-    sign_up: 'Đăng kí ngay !'
-    sample_app: 'Ứng dụng mẫu'
-    help: 'Trợ giúp'
-    english: 'Tiếng Anh'
-    vietnamese: 'Tiếng Việt'
-    ruby_and_rails_tutorial: 'Hướng dẫn Ruby trên Rails'
-    welcome_title: 'Đây là ứng dụng mẫu cho %{link}'
-    link_tutorial: 'www.railstutorial.org'
-    body_help: 'Xem tài liệu và hướng dẫn tại %{link_tutor}'
-    name: 'Họ và tên'
-    email: 'Email'
-    password: 'Mật khẩu'
-    create_my_account: 'Tạo tài khoản'
-    confirm_password: 'Xác nhận mật khẩu'
-    Welcome_to_the_sample_app!: 'Chào mừng bạn đến với ứng dụng mẫu'
+    hello: "Xin chào"
+    home: "Trang chủ"
+    login: "Đăng nhập"
+    sign_up: "Đăng kí ngay !"
+    sample_app: "Ứng dụng mẫu"
+    help: "Trợ giúp"
+    english: "Tiếng Anh"
+    vietnamese: "Tiếng Việt"
+    ruby_and_rails_tutorial: "Hướng dẫn Ruby trên Rails"
+    welcome_title: "Đây là ứng dụng mẫu cho %{link}"
+    link_tutorial: "www.railstutorial.org"
+    body_help: "Xem tài liệu và hướng dẫn tại %{link_tutor}"
+    name: "Họ và tên"
+    email: "Email"
+    password: "Mật khẩu"
+    create_my_account: "Tạo tài khoản"
+    confirm_password: "Xác nhận mật khẩu"
+    Welcome_to_the_sample_app!: "Chào mừng bạn đến với ứng dụng mẫu"
     Manipulation_fail!: "Thao tác không thành công ! Hãy kiểm tra lại thông tin !"
     invalid_email_password_combination: "Email hoặc mật khẩu chưa hợp lệ !"
-    hello_user: 'Xin chào, %{user}'
-    sign_up_now!: 'Đăng kí ngay'
-    new_user?: 'Người dùng mới?'
-    profile: 'Người dùng'
-    settings: 'Cài đặt'
-    log_out: 'Đăng xuất'
-    the_form_contains: 'Mẫu đăng kí'
-    not_found: 'Không tìm thấy kết quả'
-    update: 'Đã cập nhật'
-    error: 'lỗi'
-    users: 'Danh sách người dùng'
-    remember_me: 'Lưu mật khẩu'
+    hello_user: "Xin chào, %{user}"
+    sign_up_now!: "Đăng kí ngay"
+    new_user?: "Người dùng mới?"
+    profile: "Người dùng"
+    settings: "Cài đặt"
+    log_out: "Đăng xuất"
+    the_form_contains: "Mẫu đăng kí"
+    not_found: "Không tìm thấy kết quả"
+    update: "Đã cập nhật"
+    error: "lỗi"
+    users: "Danh sách người dùng"
+    remember_me: "Lưu mật khẩu"
     create_my_account: "Tạo tài khoản"
     deleted: "Xóa thành công"
-    all_users: 'Danh sách ngừoi dùng'
-    delete: 'Xóa'
-    edit_user: 'Chỉnh sửa thông tin'
-    save_changes: 'Lưu các thay đổi'
-    ruby_on_rails_tutorial_app: 'Hướng dẫn Ruby trên Rails'
+    all_users: "Danh sách ngừoi dùng"
+    delete: "Xóa"
+    edit_user: "Chỉnh sửa thông tin"
+    save_changes: "Lưu các thay đổi"
+    ruby_on_rails_tutorial_app: "Hướng dẫn Ruby trên Rails"
     please_log_in: "Yêu cầu đăng nhập"
-    ruby_and_rails_tutorial: 'Hướng dẫn Ruby trên Rails'
-    change: 'Thay đổi'
-    update_your_profile: 'Cập nhật thông tin'
+    ruby_and_rails_tutorial: "Hướng dẫn Ruby trên Rails"
+    change: "Thay đổi"
+    update_your_profile: "Cập nhật thông tin"
     update_success: "Cập nhật thành công"
     forgot_password: "Lấy lại mật khẩu"
     submit: "Xác nhận"
     update_password: "Cập nhật mật khẩu"
+    micropost_deleted: "Xóa thành công"
+    micropost: "Bài viết"
+    micropost_created: "Tạo bài viết thành công"
+    compose_new_micropost: "Tạo nội dung"
+    followers: "Nguời theo dõi"
+    following: "Đang theo dõi"
+    micropost_feed: "Bài viết"
+    you_sure: "Bạn có chắc chắn?"
+    email_send password_reset_instructions: "Kiểm tra email của bạn để đặt lại mật khẩu"
+    view_my_profile: "Xem trang cá nhân"
+    posted: "Đã đăng"
+    post: "Đăng"
     activerecord:
        errors:
           models:
             user:
               attributes:
-                password: 'mật khẩu'
-                confirm_password: 'xác nhận mật khẩu'
-                name: 'tên'
+                password: "mật khẩu"
+                confirm_password: "xác nhận mật khẩu"
+                name: "tên"
                 email:
                   blank: "không được để trống"

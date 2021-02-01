@@ -1,15 +1,16 @@
 class UsersController < ApplicationController
+  before_action :load_user
   before_action :correct_user, only: [:edit, :update]
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:index, :edit, :update, :destroy, :following, :followers]
+
   def current_user?(user)
     user == current_user
   end
+
   def show
-    @user = User.find_by id: params[:id]
-    if @user.nil?
-      flash[:warning] =  t 'not_found'
-    end
+    @microposts = @user.microposts.paginate(page: params[:page])
   end
+
   def index
     @users = User.paginate(page: params[:page], per_page: 2)
   end
@@ -18,7 +19,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    User.find_by(id: params[:id]).destroy
+    @user.destroy
     flash[:success] = t"deleted"
     redirect_to users_url
   end
@@ -35,21 +36,19 @@ class UsersController < ApplicationController
   end
 
   def edit
-    @user = User.find_by(id: params[:id])
   end
 
   def update
-    @user = User.find_by(id: params[:id])
     if @user.update(user_params)
       flash[:success] =  t "update"
       redirect_to @user
     else
-      render "edit"
+      render :edit
     end
   end
 
 
- def logged_in_user
+  def logged_in_user
     unless logged_in?
       store_location
       flash[:danger] =  t"please_log_in"
@@ -57,14 +56,33 @@ class UsersController < ApplicationController
     end
   end
 
+  def following
+    @title = t("following")
+    @users = @user.following
+    .paginate(page: params[:page])
+    render "show_follow"
+  end
+  def followers
+    @title = t("followers")
+    @users = @user.followers
+    .paginate(page: params[:page])
+    render "show_follow"
+  end
+
+  def load_user
+    @user = User.find_by(id: params[:id])
+    return if @users
+
+    # flash.now[:danger] = t"user_not_found"
+  end
+
   private
 
   def user_params
     params.require(:user).permit :name, :email, :password,
-                                 :password_confirmation
+    :password_confirmation
   end
-   def correct_user
-    @user = User.find_by(id: params[:id])
+  def correct_user
     redirect_to(root_url) unless @user == current_user
   end
 end

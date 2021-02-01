@@ -13,6 +13,11 @@ module SampleApp
     config.i18n.available_locales = [:en, :vi]
     config.i18n.default_locale = :vi
 
+    # Include the authenticity token in remote forms.
+config.action_view.embed_authenticity_token_in_remote_forms = true
+
+
+
     config.before_configuration do
       env_file = File.join(Rails.root, 'config', 'application.yml')
       YAML.load(File.open(env_file)).each do |key, value|

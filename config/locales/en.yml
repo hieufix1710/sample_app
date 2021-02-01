@@ -4,27 +4,36 @@ en:
   body_help: "Read more and see tutorial course on %{link_tutor}"
   link_tutorial: "www.railstutorial.org"
   welcome_title: "This is tutorial page %{link} for the sample application"
-  sign_up_now!: 'Sign up now!'
-  invalid_email_password_combination: 'Invalid email or password combination !'
+  sign_up_now!: "Sign up now!"
+  invalid_email_password_combination: "Invalid email or password combination !"
   hello_user: "Hello , %{user}"
-  not_found: 'Not Found !'
-  update: 'Updated!'
+  not_found: "Not Found !"
+  update: "Updated!"
   login: "Login"
   remember_me: "Remember me"
   deleted: "Delete success !"
-  edit_user: 'Edit user'
-  save_changes: 'Save changes'
-  ruby_on_rails_tutorial_app: 'Ruby on Rails tutorial'
-  please_log_in: 'Pleaese login !'
-  all_users: 'All users'
-  update_your_profile: 'Update your profile'
+  edit_user: "Edit user"
+  save_changes: "Save changes"
+  ruby_on_rails_tutorial_app: "Ruby on Rails tutorial"
+  please_log_in: "Pleaese login !"
+  all_users: "All users"
+  update_your_profile: "Update your profile"
   create_my_account: "Create my account"
-  ruby_on_rails_ttutorial: 'Ruby on Rails tutorial'
+  ruby_on_rails_ttutorial: "Ruby on Rails tutorial"
   update_success: "Update success!"
   forgot_password: "Forgot password"
   submit: "Submit"
   update_password: "Update password"
-
+  micropost_deleted: "Micropost deleted "
+  micropost_created: "Micropost created"
+  micropost: "Micropost"
+  view_my_profile: "View my profile"
+  compose_new_micropost: "Compose new micropost"
+  post: "post"
+  you_sure: "You sure?"
+  posted: "Posted"
+  email_send password_reset_instructions: "Check your mail link reset instructions"
+  email_address_not_found: "Email address not found"
   activerecord:
     errors:
       models:

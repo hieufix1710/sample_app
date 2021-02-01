@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-  skip_before_action :verify_authenticity_token
-
+  before_action :load_user, only: %i(create)
 
   def new
     @user = User.new
@@ -11,14 +10,13 @@ class SessionsController < ApplicationController
   end
 
   def create
-    load_user
     if @user.try(:authenticate, params[:session][:password])
       if @user.activated?
         log_in @user
         params[:session][:remember_me] == "1" ? remember(@user) : forget(@user)
         redirect_back_or @user
       else
-        message = "Account not activated. Check your email for the activation link."
+        message = t "account_not_activated_check_your_email_for_the_activation_link"
         flash[:warning] = message
         redirect_to root_url
 end
