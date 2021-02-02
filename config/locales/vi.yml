@@ -1,0 +1,14 @@
+vi:
+  hello: "Xin chào"
+  home: "Trang chủ"
+  english: "Tiếng Anh"
+  vietnamese: "Tiếng Việt"
+  log_in: "Đăng nhập"
+  help: "Trợ giúp"
+  Welcome_to_the_sample_app!: 'Chào mừng bạn đến với ứng dụng mẫu'
+  welcome_title: 'Đây là ứng dụng mẫu cho %{link}'
+  link_tutorial: 'www.railstutorial.org'
+  ruby_and_rails_tutorial: 'Hướng dẫn Ruby trên Rails'
+  sign_up: 'Đăng kí ngay !'
+  ruby_on_rails_tutorial_sample_app: "Ứng dụng đơn giản Ruby trên RAils"
+  sample_app: "Sample  App"
