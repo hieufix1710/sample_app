@@ -1,13 +1,39 @@
 en:
-  hello: "Welcome to simple app"
-  sign_up: "Sign up now !"
-  body_help: "Read more and see tutorial course on %{link_tutor}"
-  link_tutorial: "www.railstutorial.org"
-  welcome_title: "This is tutorial page %{link} for the sample application"
-  sign_up_now!: 'Sign up now!'
-  invalid_email_password_combination: 'Invalid email or password combination !'
-  hello_user: "Hello , %{user}"
-  not_found: 'Not Found !'
-  update: 'Updated!'
+  hello: "Hello"
+  home: "Home"
   login: "Login"
-  sample_app: "Sample App"
+  sign_up: "Sign up now"
+  sample_app: "Sample app"
+  help: "Help"
+  english: "English"
+  vietnamese: "Vietnamese"
+  ruby_and_rails_tutorial: "Ruby on Rails tutorial"
+  welcome_title: "This is a sample app %{link}"
+  link_tutorial: "www.railstutorial.org"
+  body_help: "Watch course and tutorial %{link_tutor}"
+  name: "Name"
+  email: "Email"
+  password: "Password"
+  create_my_account: "Create my account"
+  confirm_password: "Password confirm"
+  welcome_to_the_sample_app: "Welcom to sample app"
+  manipulation_fail: "Manipulation fail ! Please check information again"
+  invalid_email_password_combination: "Invalid email password conbination"
+  hello_user: "Hello, %{user}"
+  sign_up_now!: "Sign up now"
+  new_user?: "New user?"
+  profile: "Profile"
+  settings: "Settings"
+  log_out: "Logout"
+  the_form_contains: "The form contains"
+  error: "Error"
+  activerecord:
+   errors:
+    models:
+      user:
+        attributes:
+          password: "Password"
+          confirm_password: "Password confirm"
+          name: "Name"
+          email:
+            blank: "must not blank"
