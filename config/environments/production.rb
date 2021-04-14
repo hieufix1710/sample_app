@@ -126,14 +126,14 @@ Rails.application.configure do
   end
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = {host: "damp-peak-65043.herokuapp.com" }
+  config.action_mailer.default_url_options = {host: "damp-peak-65043.herokuapp.com", protocol: 'https' }
   config.action_mailer.perform_deliveries = true
 
   # SMTP settings for gmail
   config.action_mailer.smtp_settings = {
   address: "smtp.gmail.com",
   port: 587,
-  domain: "gmail.com",
+  domain: "damp-peak-65043.herokuapp.com",
   user_name: ENV["MAIL_USERNAME"],
   password: ENV["MAIL_PASSWORD"],
   authentication: "plain",
