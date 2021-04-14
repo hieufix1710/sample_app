@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.send_activation_email
       flash[:info] = "Please check your email to activate your account."
-      redirect_to @user
+      redirect_to login_path
     else
       flash[:error] = "fails"
       render :new
