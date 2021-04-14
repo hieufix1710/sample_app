@@ -15,6 +15,7 @@ gem "webpacker", "~> 5.0"
 gem "jbuilder", "~> 2.7"
 gem "turbolinks", "~> 5"
 gem "config"
+gem 'pg'
 
 gem "image_processing", "1.9.3"
 gem "mini_magick", "4.9.5"
