@@ -21,7 +21,7 @@ class UsersController < ApplicationController
   def destroy
     @user.destroy
     flash[:success] = t"deleted"
-    redirect_to users_url
+    redirect_to users_path
   end
 
   def create
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.send_activation_email
       flash[:info] = "Please check your email to activate your account."
-      redirect_to login_url
+      redirect_to login_path
     else
       render :new
     end
@@ -52,7 +52,7 @@ class UsersController < ApplicationController
     unless logged_in?
       store_location
       flash[:danger] =  t"please_log_in"
-      redirect_to login_url
+      redirect_to login_path
     end
   end
 
