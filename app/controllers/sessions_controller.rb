@@ -17,9 +17,9 @@ class SessionsController < ApplicationController
         redirect_back_or @user
       else
         message = t "account_not_activated_check_your_email_for_the_activation_link"
-        flash[:warning] = message
-        redirect_to root_url
-end
+        flash.now[:warning] = message
+        render :new
+      end
     else
       flash[:warning] = t "invalid_email_password_combination"
       render :new

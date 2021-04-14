@@ -33,6 +33,7 @@ en:
   you_sure: "You sure?"
   posted: "Posted"
   email_send password_reset_instructions: "Check your mail link reset instructions"
+  account_not_activated_check_your_email_for_the_activation_link: "Account not actived please check your email to the activation link"
   email_address_not_found: "Email address not found"
   activerecord:
     errors:

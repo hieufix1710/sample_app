@@ -54,6 +54,7 @@ vi:
     following: "Đang theo dõi"
     micropost_feed: "Bài viết"
     you_sure: "Bạn có chắc chắn?"
+    account_not_activated_check_your_email_for_the_activation_link: "Tài khoản chưa được kích hoạt, hãy kiểm tra email và click vào link kích hoạt"
     email_send password_reset_instructions: "Kiểm tra email của bạn để đặt lại mật khẩu"
     view_my_profile: "Xem trang cá nhân"
     posted: "Đã đăng"

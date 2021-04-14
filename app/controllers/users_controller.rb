@@ -31,7 +31,6 @@ class UsersController < ApplicationController
       flash[:info] = "Please check your email to activate your account."
       redirect_to login_path
     else
-      flash[:error] = "fails"
       render :new
     end
   end
